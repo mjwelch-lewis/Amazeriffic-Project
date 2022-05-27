@@ -1,0 +1,110 @@
+body {
+    background-color: #f9e933;
+    font-family: droid-sans, sans-serif;
+}
+
+header, main, footer {
+    min-width: 855px;
+}
+
+header .container, main .container, footer .container {
+    max-width: 855px;
+    margin: auto;
+}
+
+header {
+    background: white;
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+header h1 {
+    float: left;
+    width: 570px;
+}
+
+header nav {
+    float: right;
+    width: 285px;
+}
+
+main {
+    background: white;
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+footer {
+    padding-top: 20px;
+}
+
+.info {
+    float: left;
+    width: 570px;
+}
+
+.image {
+    float: right;
+    width: 285px;
+}
+
+.contact {
+    float: left;
+    width: 570px;
+}
+
+.sitemap {
+    float: right;
+    width: 285px;
+}
+
+h1, h2, h3, h4 {
+    font-family: Ubuntu;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-style: italic;
+    color: red;
+    font-size: 40pt;
+}
+
+h2 {
+    font-size: 30pt;
+}
+
+h3 {
+    font-size: 16pt;
+    margin-top: 40px;
+}
+
+h4 {
+    font-size: 12pt;
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.list-left {
+    float: left;
+    width: 142px;
+}
+
+.list-right {
+    float: right;
+    width: 142px;
+}
+
