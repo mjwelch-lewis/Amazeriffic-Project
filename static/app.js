@@ -35,6 +35,10 @@ var main = function (toDoObjects) {
                 });
             } 
             else if ($element.parent().is(":nth-child(3)")) {
+                // THIS IS THE TAGS TAB CODE
+                console.log("the tags tab was clicked!");
+            }
+            else if ($element.parent().is(":nth-child(4)")) {
                 //displays button and text field to add todo item
                 $input = $("<input>"),
                 $button = $("<button>").text("+");
@@ -48,6 +52,7 @@ var main = function (toDoObjects) {
 
                 $content = $("<div>").append($input).append($button);
             }
+            
 
             $("main .content").append($content);
 
@@ -60,7 +65,7 @@ var main = function (toDoObjects) {
 };
 
 $(document).ready(function () {
-    $.getJSON("https://amazeriffic-project.azurewebsites.net/todos.json", function (toDoObjects) {
+    $.getJSON("todos.json", function (toDoObjects) {
         // call main with the to-dos as an argument
         main(toDoObjects);
     });
