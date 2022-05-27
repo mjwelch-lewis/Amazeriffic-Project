@@ -1,6 +1,6 @@
 var main = function (toDoObjects) {
     "use strict";
-    
+
     var toDos = toDoObjects.map(function (toDo) {
         return toDo.description;
     });
@@ -60,7 +60,7 @@ var main = function (toDoObjects) {
 };
 
 $(document).ready(function () {
-    $.getJSON("todos.json", function (toDoObjects) {
+    $.getJSON("https://amazeriffic-project.azurewebsites.net/todos.json", function (toDoObjects) {
         // call main with the to-dos as an argument
         main(toDoObjects);
     });
